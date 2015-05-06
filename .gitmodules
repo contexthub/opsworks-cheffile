@@ -1,0 +1,4 @@
+[submodule "cookbooks"]
+	path = cookbooks
+	url = git@github.com:contexthub/opsworks-cheffile
+	branch = cookbooks
