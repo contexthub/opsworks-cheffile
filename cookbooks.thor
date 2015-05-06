@@ -7,6 +7,10 @@ class Cookbooks < Thor
   include Archive::Tar
   include Thor::Actions
 
+  def self.exit_on_failure?
+    true
+  end
+
   desc 'install', 'Install cookbooks from Cheffile'
   option :package, type: :boolean, default: false
   def install
@@ -16,9 +20,9 @@ class Cookbooks < Thor
       if !package
         raise Thor::Error, "Cookbook packaging failed; aborting upload."
       end
-
       puts
     end
+    true
   end
 
   desc 'update', 'Update cookbook versions from Cheffile'

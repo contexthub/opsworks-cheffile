@@ -1,0 +1,5 @@
+#/cookbooks
+/.bundle
+/vendor/bundle
+/bin
+/tmp

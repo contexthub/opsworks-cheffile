@@ -1,0 +1,10 @@
+GIT
+  remote: https://github.com/pedroaxl/opsworks-resque
+  ref: master
+  sha: 575d7605192213e5251c076c8aa0ac4307854e2d
+  specs:
+    opsworks-resque (0.1.0)
+
+DEPENDENCIES
+  opsworks-resque (>= 0)
+
